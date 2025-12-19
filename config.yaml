@@ -1,0 +1,31 @@
+# Configuration file for Credit Scoring Model
+
+# Data paths
+data:
+  raw: "data/raw/german_credit_data.csv"
+  processed: "data/processed/german_credit_processed.csv"
+
+# Model hyperparameters
+models:
+  logistic_regression:
+    C: 1.0
+    random_state: 42
+  decision_tree:
+    max_depth: 10
+    random_state: 42
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    random_state: 42
+
+# Training parameters
+training:
+  test_size: 0.2
+  random_state: 42
+
+# Output paths
+output:
+  models_dir: "models/"
+  reports_dir: "reports/"
+  figures_dir: "reports/figures/"
+  metrics_file: "reports/metrics.json"
