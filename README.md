@@ -25,6 +25,4 @@ Build and compare models to assess credit risk and help automate lending decisio
 - Random Forest achieved the highest ROC-AUC: ~0.82
 - Handles class imbalance effectively
 
-## Requirements
-```bash
-pip install pandas scikit-learn matplotlib seaborn jupyter
+
